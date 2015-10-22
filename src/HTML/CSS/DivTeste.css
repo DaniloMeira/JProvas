@@ -1,0 +1,557 @@
+@page{
+margin:0px;
+padding:3px;
+border:5px solid transparent;
+}
+
+/*@font-face {
+font-family: Arial_JProvas;
+src: url('../fontes/arialbi.ttf');
+font-weight: normal;
+font-style: normal;
+-fs-pdf-font-embed: embed;
+-fs-pdf-font-encoding: Identity-H;
+}
+
+@font-face {
+font-family:Times_JProvas;
+src: url('../fontes/times.ttf');
+font-weight: normal;
+font-style: normal;
+}*/
+
+p{
+color:black;
+font-family:Times New Roman;
+background-color:transparent;
+font-size:10pt;
+line-height:11.5pt;
+padding:0px;
+margin:0px;
+}
+
+b{display:inline;}
+
+h1{
+font-family:Times New Roman;
+font-size:15pt;
+line-height:15pt;
+padding:0px;
+margin:0px;
+bottom: 0;
+display:inline;}
+
+h2{
+font-family:Times New Roman;
+font-size:13pt;
+line-height:13pt;
+padding:0px;
+margin:0px;
+bottom: 0;
+display:inline;}
+
+h3{
+font-family:Times New Roman;
+font-size:11pt;
+line-height:11.5pt;
+padding:0px;
+margin:0px;
+bottom: 0;
+display:inline;}
+
+h4{
+font-family:Times New Roman;
+font-size:9pt;
+line-height:11.5pt;
+padding:0px;
+margin:0px;
+bottom: 0;
+display:inline;
+}
+
+h5{
+position:relative;
+font-family:Times New Roman;
+font-size:8pt;
+line-height:11.5pt;
+padding:0px;
+margin:0px;
+bottom:0px;
+display:inline;
+}
+
+h6{
+font-family:Times New Roman;
+font-size:6pt;
+line-height:11.5pt;
+padding:0px;
+margin:0px;
+float:rigt;
+display:inline;
+bottom: 0;
+}
+
+table, th, td {
+position:relative;
+vertical-align: middle; 
+width:12pt;
+float:left;
+font-size:7pt;
+border: 1px solid black;
+border-collapse: collapse;
+height: 11.5pt;
+display: table
+}
+
+
+.texto_tipo1{
+width:265pt;
+/*float:right;*/
+margin-left: 150pt;
+padding:0pt;
+margin:0pt;
+text-indent:18pt;
+font-family:Times New Roman;
+font-size:10pt;
+border:1px solid green;
+line-height:11.5pt;
+}
+
+.texto_tipo2{
+width:500pt;
+/*min-width:246pt;
+max-width:500pt;*/
+/*float:left;*/
+text-indent:18pt;
+font-family:Times New Roman;
+font-size:10pt;
+border:1px solid green;
+line-height:11.5pt;
+}
+
+.divPoesia_f1{
+display:table;
+position:relative;
+max-width:237pt;
+min-width:30pt;
+height:auto;
+margin-left:auto;
+margin-right:auto;
+background-color:transparent;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+.divPoesia_f2{
+display:table;
+position:relative;
+background-color:green;
+width:auto;
+height:auto;
+max-width:510pt;
+min-width:50pt;
+margin-left:auto;
+margin-right:auto;
+background-color:transparent;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+.divAfirmativas_f1{
+display:table;
+position:relative;
+height:auto;
+width:244pt;
+margin-left:16pt;
+margin-right:auto;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+.divAfirmativas_f2{
+display:table;
+position:relative;
+height:auto;
+width:495pt;
+margin-left:21pt;
+margin-right:auto;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+.divAfirmativas_f1 li{
+list-style-type:upper-roman;
+padding:0pt;
+/*margin-left: 1px;*/
+}
+
+.divAfirmativas_f2 li{
+list-style-type:upper-roman;
+padding:0pt;
+/*margin-left: 1px;*/
+}
+
+
+
+
+.divAltern_f2{
+display:table;
+position:relative;
+height:auto;
+width:495pt;
+margin-left:14pt;
+margin-right:auto;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+.divAltern_f1{
+display:table;
+position:relative;
+height:auto;
+width:240pt;
+margin-left:12pt;
+margin-right:auto;
+border:1pt solid green;
+padding-left:0pt;
+}
+
+
+.alternativas li{
+list-style-type:upper-latin;
+padding:0pt;
+font-size:8pt
+}
+
+.alternativas li:before{
+content:')';
+position:absolute;
+float: left; 
+margin-left: -5pt;
+}
+
+
+ul{
+padding:0pt;
+font-size:1pt;
+}
+
+li{
+list-style-type: decimal-leading-zero;
+list-style-position: outside;
+/*border:1pt solid yellow;*/
+/*padding-left:5pt;*/
+font-size:7pt;
+line-height:11.5pt;
+font-family:Times New Roman;
+/*padding:0pt;*/
+
+}
+
+
+
+
+.textoNumerado{
+counter-reset: nu_linha;
+margin: 0 auto; 
+text-align: center;
+color:orange;
+}
+
+.textoNumerado:before{
+counter-increment: nu_linha;
+content: counter(nu_linha);
+}
+
+.esp1{
+position:relative;
+border:0pt;
+background-color:transparent;
+padding:0pt;
+margin:0pt;
+height:14pt;
+}
+
+.esp2{
+position:relative;
+border:0pt;
+background-color:red;
+padding:0pt;
+margin:0pt;
+height:6pt;
+}
+
+.esp3{
+position:relative;
+border:0pt;
+background-color:transparent;
+padding:0pt;
+margin:0pt;
+height:5pt;
+}
+
+.esp4{
+position:relative;
+border:0pt;
+background-color:transparent;
+padding:0pt;
+margin:0pt;
+height:3.5pt;
+}
+
+.numeradorQuestao{
+padding:0px;
+margin:0px;
+font-family:Arial;
+font-size:9pt;
+background-color:black;
+color:white;
+width:auto;
+max-width:7mm;
+text-align:center;
+width:auto;
+line-height:9.5pt;
+vertical-align:center;
+}
+
+.cabecalho{
+position:absolute;
+border:1px solid black;
+top:3px;
+left:2mm;
+padding-top:1pt;
+width:188.7mm;
+height:11mm;
+line-height:13.5px;
+padding-top:3px;
+padding-left:3px;
+
+}
+
+.logoCabecalho{
+position:relative;
+height:10mm;
+width:130px;
+float:left;
+border-right:10px solid transparent;
+vertical-align:middle;
+display: table;
+}
+
+.imgLogo{
+position:relative;
+display: table-cell;
+text-align: left;
+vertical-align: middle;
+}
+
+/*necessario para permitir a inclusao de multiplos espaços no inicio da linha*/
+.txtBranco{
+color:red;
+display: inline;
+font-size:1pt;
+margin-left: -1pt;
+}
+
+.cabecalho_txt1{
+position:absolute;
+border:1px solid green;
+/*padding-left:100pt;*/
+top:2.5px;
+padding-top:1pt;
+width:188mm;/*188;left:135px;*/
+left:2pt;
+height:4mm;
+line-height:13.5px;
+/*para aceitar digitacao de multiplos espacos:
+http://stackoverflow.com/questions/2005657/what-can-i-use-to-substitute-nbspnbsp-in-html*/
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+}
+
+.cabecalho_txt2{
+position:absolute;
+border:1px solid red;
+top:24px;
+left:135px;
+width:153mm;
+height:4mm;
+line-height:13.5px;
+/*para aceitar digitacao de multiplos espacos:*/
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+}
+
+
+
+.rodape{
+position:absolute;
+border:0.5px solid black;
+padding-top:3px;
+bottom:1px;
+left:2mm;
+line-height:6pt;
+width:189.8mm;
+height:3.5mm;
+border-top-style:solid;
+border-right:0px;
+border-bottom:0px;
+border-left:0px;
+font-family:Times New Roman;
+font-size:8pt;
+}
+
+.rodape_txt1{
+position:relative;
+border:1px solid transparent;
+bottom:-2px;
+left:0mm;
+line-height:6pt;
+width:95mm;
+height:3mm;
+font-family:Times New Roman;
+font-size:8pt;
+float:left;
+}
+
+.rodape_txt2{
+position:relative;
+border:1px solid transparent;
+bottom:-6px;
+line-height:6pt;
+width:93mm;
+height:3mm;
+float: right;
+font-family:Times New Roman;
+font-size:8pt;
+text-align:right;
+}
+
+.divBordaPagina{
+position:absolute;
+left:6mm;
+border:1px solid gray;
+margin:0px;
+padding:0px;
+width:193mm;
+height:287mm;
+
+}
+
+.divEsquerda
+{
+position:absolute;
+float:right;
+ top:56px;
+ left:2mm;
+width:349px;
+height:754pt;
+ padding:0px;
+ border:1px solid transparent;
+margin:0px; 
+background-color:white;
+}
+
+.divDireita
+{
+position:absolute;
+float:right;
+ top:56px;
+ right:2mm;
+width:349px;
+height:754pt;
+ padding:0px;
+ border:1px solid transparent;
+ margin:0px; 
+background-color:white;
+}
+
+.barraCentro
+{
+position:absolute;
+ top:56px;
+ width:0px;
+ left:96.3mm;
+ height:1005px;
+ padding:0.3px;
+ border:0.3px solid black;
+ background-color:black;
+ margin:0px;
+background-image:url('dievisoriaProva.gif');
+background-repeat:repeat;
+background-position:center;
+background-size:20px 1065px;
+}
+
+.TituloDivisoria{
+ padding:0pt;
+ margin:0pt;
+ text-align:center;
+ font-family:Arial;
+ font-size:13pt;
+ line-height:20.5pt;
+ width:261.75pt;
+ border:0.3pt solid black;
+ background-color: rgb(198,198,198);
+}
+
+.TituloDivisoriaFormato2
+{
+ padding:0pt;
+ margin:0pt;
+ text-align:center;
+ font-family:Arial;
+ font-size:13pt;
+ line-height:20.5pt;
+ width:535pt;
+ border:0.3pt solid black;
+ background-color: rgb(198,198,198);
+}
+ 
+.subDiv
+{
+ width:349px;
+ padding:0px;
+ border:1px solid transparent;
+ margin:0px;
+ padding:0px; 
+ word-wrap: break-word;
+}
+
+.divFormato2
+{
+ position:absolute;
+ float:right;
+ top:56px;
+ left:2mm;
+ width:712px;
+ padding:0px;
+ border:1px solid red;
+ margin:0px; 
+ height:auto;
+ background-color:white;
+}
+
+.subDivFormato2
+{
+ width:712px;
+ padding:0px;
+ border:1px solid transparent;
+ margin:0px;
+ padding:0px; 
+ word-wrap: break-word;
+}
+
+
+.divTesteImagem
+{
+ height:82pt;
+ padding:0px;
+ border:1px solid red;
+ margin:0px;
+ padding:0px; 
+ }

@@ -1,0 +1,279 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Telas;
+
+import java.awt.event.ActionEvent;
+import javax.swing.SwingUtilities;
+
+/**
+ *
+ * @author Danilo
+ */
+public class TelaDesfragmentaBanco extends javax.swing.JFrame {
+  public boolean carregado=false;
+  /**
+   * Creates new form TelaDesfragmentaBanco
+   */
+  public TelaDesfragmentaBanco() /*throws InterruptedException*/ {
+    
+    //initComponents();
+    //Thread.sleep(1300);
+    //inicia2();
+    carregado=true;
+    
+  }
+
+  
+public void actionPerformed(ActionEvent e) {  
+ 
+    SwingUtilities.invokeLater(new Runnable() {  
+  
+        @Override  
+        public void run() {  
+            try {  
+                Thread.sleep(1000);  
+            } catch (InterruptedException e) {  
+            }  
+           labelPercentual.setText("dez por cento");  
+  
+        }  
+    });  
+}  
+ 
+
+public void alteraLabel(final String x) {  
+ 
+    SwingUtilities.invokeLater(new Runnable() {  
+  
+        @Override  
+        public void run() {  
+           labelPercentual.setText(x);  
+        }  
+    });  
+}
+
+public void inicia2(){
+SwingUtilities.invokeLater(new Runnable() {  
+  
+  @Override  
+  public void run() {  
+jScrollPane1 = new javax.swing.JScrollPane();
+    jTextArea1 = new javax.swing.JTextArea();
+    jLabel1 = new javax.swing.JLabel();
+    labelTexto1 = new javax.swing.JLabel();
+    labelTexto2 = new javax.swing.JLabel();
+    labelPercentual = new javax.swing.JLabel();
+    botaoOKDesfragmentado = new javax.swing.JButton();
+
+    jTextArea1.setColumns(20);
+    jTextArea1.setRows(5);
+    jScrollPane1.setViewportView(jTextArea1);
+
+    setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/IconesSistema/iconeLoading.gif"))); // NOI18N
+
+    labelTexto1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+    labelTexto1.setForeground(new java.awt.Color(0, 51, 255));
+    labelTexto1.setText("DESFRAGMENTANDO ARQUIVO");
+
+    labelTexto2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+    labelTexto2.setForeground(new java.awt.Color(51, 51, 255));
+    labelTexto2.setText("DE BANCO DE DADOS...");
+
+    labelPercentual.setText("0%");
+
+    botaoOKDesfragmentado.setText("OK");
+    botaoOKDesfragmentado.setEnabled(false);
+    botaoOKDesfragmentado.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        botaoOKDesfragmentadoActionPerformed(evt);
+      }
+    });
+
+    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(layout.createSequentialGroup()
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addGroup(layout.createSequentialGroup()
+            .addGap(103, 103, 103)
+            .addComponent(jLabel1))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(67, 67, 67)
+            .addComponent(labelTexto2))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(46, 46, 46)
+            .addComponent(labelTexto1))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(104, 104, 104)
+            .addComponent(labelPercentual))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(88, 88, 88)
+            .addComponent(botaoOKDesfragmentado, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        .addContainerGap(54, Short.MAX_VALUE))
+    );
+    layout.setVerticalGroup(
+      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(layout.createSequentialGroup()
+        .addGap(25, 25, 25)
+        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelTexto2)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelPercentual)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(botaoOKDesfragmentado)
+        .addContainerGap(23, Short.MAX_VALUE))
+    );
+
+    pack();
+  }  
+}); 
+
+
+
+
+}
+  
+  
+  /**
+   * This method is called from within the constructor to initialize the form.
+   * WARNING: Do NOT modify this code. The content of this method is always
+   * regenerated by the Form Editor.
+   */
+  @SuppressWarnings("unchecked")
+  // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+  private void initComponents() {
+
+    jScrollPane1 = new javax.swing.JScrollPane();
+    jTextArea1 = new javax.swing.JTextArea();
+    jLabel1 = new javax.swing.JLabel();
+    labelTexto1 = new javax.swing.JLabel();
+    labelTexto2 = new javax.swing.JLabel();
+    labelPercentual = new javax.swing.JLabel();
+    botaoOKDesfragmentado = new javax.swing.JButton();
+
+    jTextArea1.setColumns(20);
+    jTextArea1.setRows(5);
+    jScrollPane1.setViewportView(jTextArea1);
+
+    setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+    jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/IconesSistema/iconeLoading.gif"))); // NOI18N
+
+    labelTexto1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+    labelTexto1.setForeground(new java.awt.Color(0, 51, 255));
+    labelTexto1.setText("DESFRAGMENTANDO ARQUIVO");
+
+    labelTexto2.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+    labelTexto2.setForeground(new java.awt.Color(51, 51, 255));
+    labelTexto2.setText("DE BANCO DE DADOS...");
+
+    labelPercentual.setText("0%");
+
+    botaoOKDesfragmentado.setText("OK");
+    botaoOKDesfragmentado.setEnabled(false);
+    botaoOKDesfragmentado.addActionListener(new java.awt.event.ActionListener() {
+      public void actionPerformed(java.awt.event.ActionEvent evt) {
+        botaoOKDesfragmentadoActionPerformed(evt);
+      }
+    });
+
+    javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+    getContentPane().setLayout(layout);
+    layout.setHorizontalGroup(
+      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(layout.createSequentialGroup()
+        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+          .addGroup(layout.createSequentialGroup()
+            .addGap(103, 103, 103)
+            .addComponent(jLabel1))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(67, 67, 67)
+            .addComponent(labelTexto2))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(46, 46, 46)
+            .addComponent(labelTexto1))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(104, 104, 104)
+            .addComponent(labelPercentual))
+          .addGroup(layout.createSequentialGroup()
+            .addGap(88, 88, 88)
+            .addComponent(botaoOKDesfragmentado, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        .addContainerGap(54, Short.MAX_VALUE))
+    );
+    layout.setVerticalGroup(
+      layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+      .addGroup(layout.createSequentialGroup()
+        .addGap(25, 25, 25)
+        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelTexto2)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(labelPercentual)
+        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        .addComponent(botaoOKDesfragmentado)
+        .addContainerGap(23, Short.MAX_VALUE))
+    );
+
+    pack();
+  }// </editor-fold>//GEN-END:initComponents
+
+  private void botaoOKDesfragmentadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoOKDesfragmentadoActionPerformed
+    this.dispose();
+  }//GEN-LAST:event_botaoOKDesfragmentadoActionPerformed
+
+  /**
+   * @param args the command line arguments
+   */
+  public static void main(String args[]) {
+    /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+     * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+     */
+    try {
+      for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+        if ("Nimbus".equals(info.getName())) {
+          javax.swing.UIManager.setLookAndFeel(info.getClassName());
+          break;
+        }
+      }
+    } catch (ClassNotFoundException ex) {
+      java.util.logging.Logger.getLogger(TelaDesfragmentaBanco.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (InstantiationException ex) {
+      java.util.logging.Logger.getLogger(TelaDesfragmentaBanco.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (IllegalAccessException ex) {
+      java.util.logging.Logger.getLogger(TelaDesfragmentaBanco.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+      java.util.logging.Logger.getLogger(TelaDesfragmentaBanco.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+    }
+        //</editor-fold>
+
+    /* Create and display the form */
+    java.awt.EventQueue.invokeLater(new Runnable() {
+      public void run() {
+        new TelaDesfragmentaBanco().setVisible(true);
+      }
+    });
+  }
+
+  // Variables declaration - do not modify//GEN-BEGIN:variables
+  public javax.swing.JButton botaoOKDesfragmentado;
+  private javax.swing.JLabel jLabel1;
+  private javax.swing.JScrollPane jScrollPane1;
+  private javax.swing.JTextArea jTextArea1;
+  public javax.swing.JLabel labelPercentual;
+  public javax.swing.JLabel labelTexto1;
+  public javax.swing.JLabel labelTexto2;
+  // End of variables declaration//GEN-END:variables
+}
